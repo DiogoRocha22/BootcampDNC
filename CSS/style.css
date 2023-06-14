@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+}
+
+:root{
+    --colorblueDNC: #0C70F2;
+    --blackDNC: #303030;
+    --cinzaHover: #CCCCCC;
+}
+
+body{
+    font-family: 'Inter';
+    width: auto;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+    background-repeat: no-repeat;
+}
+
+/* Barra de navegaçao */
+#navBar{
+    height: 100px;
+    background-color: var(--blackDNC);
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}   
+    #linksNav a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 22px;
+        font-weight: 600;
+    
+    }
+    #linksNav a:hover{
+        color: var(--cinzaHover);
+    }
+    #linksNav{
+        width: 46%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+    nav button{
+        width: 80px;
+        height: 39px;
+        background: var(--colorblueDNC);
+        border: 0;
+        box-shadow: 5px 4px 4px rgba(12, 112, 242, 0.25);
+        margin-right: 8%;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+    }
+
+/* Parte principal/Formulário */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 100px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+header p{
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.backblack{
+    background-color: black;
+    padding: 0px 3px 0px 3px;
+}
+form{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 195px;
+    width: 630px;
+}
+.form-gp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+form label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input{
+    height: 48px;
+    padding-left: 18px;
+    font-size: 20px;
+    border: 0;
+
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+.checkbox-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+#checkboxes{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+input::placeholder{
+    color: rgba(57, 57, 57, 0.5);
+}
+input[type='checkbox']{
+    transform: scale(1.5);
+    margin-left: 20px;
+}
+form button{
+    margin-bottom: 270px;
+    margin-top: 85px;
+    width: 630px;
+    height: 56px;
+    border: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    cursor: pointer;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+   
+    background: var(--colorblueDNC);
+    box-shadow: 3px 5px 4px rgba(21, 120, 250, 0.25);
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+    background-color: var(--colorblueDNC);
+    color: #FFFFFF;
+}
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 330px;
+    }
+    footer h3{
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 30px;
+        text-align: center;
+        background-color: #303030;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .linha1{
+        padding-top: 45px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 70px;
+        align-items: center;
+    }
+    footer ul{
+        list-style: none;
+        padding: 0;
+    }
+    footer li{
+        text-align: center;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 30px;
+        margin: 22px 0px 22px 0px;
+    }
+    footer a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+        footer a:hover{
+            color: var(--cinzaHover);
+        }
+
+.endereço{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    width: 25%;
+}
+
+.linha2{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 32px;
+}
+
+@media only screen and (max-width: 600px ){
+    #navBar{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border: 0;
+    }
+    #linksNav{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+    #linksNav a{
+        height: 50px;
+    }
+    #navBar button{
+        margin-top: 20px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    /* Section */
+    header h1{
+        font-size: 40px;
+        margin-top: 30%;
+    }
+    header p{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 30px;
+        line-height: 110%;
+    }
+
+    /* Formulário */
+    form{
+        margin-top: 10%;
+        width: 90%;
+        font-size: 20px;
+    }
+    input{
+        font-size: 16px;
+        height: 40px;
+    }
+    .checkbox-itens{
+        font-size: 15px;
+    }
+    #checkboxes{
+        margin-bottom: 5%;
+    }
+    input[type='checkbox']{
+        transform: scale(1.0);
+        margin-right: 8px;
+        margin-left: 10px;
+    }
+    form button{
+        width: 100%;
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 30%;
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    /* Footer */
+    .linha1{
+        flex-direction: column;
+    }
+    .endereço{
+        width: 90%;
+    }
+    .linha2{
+        font-size: 20px;
+    }
+}
